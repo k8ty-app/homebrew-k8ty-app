@@ -7,7 +7,7 @@ class K8tyHaiku < Formula
   depends_on "sbt"
 
   def install
-    system "sbt" "nativeImage"
+    system "sbt", "nativeImage"
     bin.install "./target/native-image/k8ty-haiku"
   end
 
